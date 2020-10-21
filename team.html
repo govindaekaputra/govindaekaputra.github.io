@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="this is my first PWA">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ee6e73">
+    <link rel="stylesheet" href="css/lib/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="shortcut icon" href="/asset/icon-128x128.png">
+    <link rel="apple-touch-icon" href="/asset/icon-128x128.png">
+    <title>News-Priemer League</title>
+</head>
+<body>
+    <nav role="navigation">
+        <div class="nav-wrapper container">
+            <a href="index.html" class="brand-logo" id="logo-container">News-PL</a>
+            <a href="index.html" class="sidenav-trigger" data-target="nav-mobile"><i class="material-icons">arrow_back</i></a>
+            <ul class="topnav right hide-on-med-and-down"></ul>
+            <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+    </nav>
+
+    <div class="container" id="team-content"></div>
+    
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red" id="save">
+            <i class="large material-icons"save>save</i>
+        </a>
+    </div>
+
+    <script src="js/lib/materialize.min.js"></script>
+    <script src="js/lib/idb.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/config-service-worker.js" type="module"></script>
+    <script src="js/config-notification.js"></script>
+</body>
+</html>
